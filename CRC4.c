@@ -48,7 +48,7 @@ uint8_t crc4_tablet_init(int size)
 * @param len -> Size of data
 * @return -> CRC value.
 */
-uint8_t crc4itu(uint8_t crc, unsigned char *data, unsigned char len) {
+uint8_t crc4(uint8_t crc, unsigned char *data, unsigned char len) {
  if (data == NULL)
   return 0;
  while (len--) crc = table_byte[crc ^ *data++];
